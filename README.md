@@ -1,5 +1,5 @@
 # JUFE-demos
-关于江西财经大学网站的一些demos
+关于江西财经大学信息门户网站的一些demos
 
 ## 江西财经大学自动评教系统
 引用[xNathan](https://github.com/xNathan/TeachEvaluation)项目中的代码，并加以修改。
