@@ -29,7 +29,7 @@ def foo():
 @time_use
 def ml():
     for i in range(5):
-        a = EvaluateTeach('2201503184', 'pjd19970404')
+        a = EvaluateTeach('220150****', 'pjd***')
         t = threading.Thread(target=a.run)
         t.start()
         t.join()
