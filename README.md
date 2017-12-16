@@ -14,7 +14,7 @@
 3. 重构了代码，使代码更易阅读
 
 ### 使用说明
-< 老司机请优雅的上车---[如何下载github上的单个文件](https://www.cnblogs.com/zhaoqingqing/p/5534827.html)
+> 老司机请优雅的上车---[如何下载github上的单个文件](https://www.cnblogs.com/zhaoqingqing/p/5534827.html)
 
 1. `pip install requirements.txt` 安装必要的包
 2. `python AutoEvaluateTeach.py -u 220150**** -p pjd***` 输入相关的信息
