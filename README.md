@@ -20,6 +20,11 @@
 2. `python AutoEvaluateTeach.py -u 220150**** -p pjd***` 输入相关的信息
 3. 愉快的自动评教了，但是要记住自己登陆上去点击结束评教的按钮
 
+### 操作示例
+![1](https://github.com/poetlife/JUFE-demos/blob/master/pics/1.png)
+![2](https://github.com/poetlife/JUFE-demos/blob/master/pics/2.png)
+![3](https://github.com/poetlife/JUFE-demos/blob/master/pics/3.png)
+
 ### 免责声明
 [原作者免责声明](https://github.com/xNathan/TeachEvaluation#免责声明)
 1. 本次修改已经邮件和原作者[@xNathan](https://github.com/xNathan)取得了联系，同样希望大家在使用的时候本着客观公正的态度去给每个老师进行评价。
