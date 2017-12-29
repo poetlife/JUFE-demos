@@ -41,4 +41,11 @@
 4. 使用了`pandas`库的支持
 
 ### 使用说明
-有时间再更新。。。先烂尾，反正代码没毛病
+这是第二个关于江西财经大学信息门户网站的小demo，然后本demo本着非Python爱好者用不了的态度，所以用了一些高级的原生的不带的package，目的是为了减少代码量，此外，本人也非CS专业，只是抱着学习的态度在做这些，因此，这个版本一旦写好，以后门户网更新了应该不会再进行相应的更新。
+1. 需要的package：`pandas/rsa/beautifulsoup`
+2. 依然采用了命令行输入的方式`Python /自动获取课程容量信息/CourseInfo.py -u <username> -p <password> -p1 <path1> -p2 <path2>`
+3. `path1`是指存放课程代码的列表的txt文件，`path2`是指生成的xlsx文件的导出位置。
+4. Example: `Python /自动获取课程容量信息/CourseInfo.py -u 220150**** -p ***** -p1 E:/1.txt -p2 E:/result.xlsx`
+
+### 存放课程代码txt文件实例
+
