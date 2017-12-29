@@ -48,4 +48,14 @@
 4. Example: `Python /自动获取课程容量信息/CourseInfo.py -u 220150**** -p ***** -p1 E:/1.txt -p2 E:/result.xlsx`
 
 ### 存放课程代码txt文件实例
+1. Example中的`E:/1.txt`文件格式如下图所示。
+![1.txt样式](https://github.com/poetlife/JUFE-demos/blob/master/pics/4.png)
+每个代码之间用`\n`隔开。
+2. 导出文件样式
+![result.xlsx](https://github.com/poetlife/JUFE-demos/blob/master/pics/5.png)
+
+### 免责声明
+1. 由于这个程序是用学生账号对学校服务器进行**爬虫操作**，因此如果过于爬取频率过大被学校查处，使用者自行解决。
+2. 由于**爬虫**会使用较大服务器带宽，不建议使用者在学生集中选课时使用，为此造成信息门户系统访问速度变慢是作者非常不提倡的。
+3. 希望使用者能**充分利用**爬取的文件，不要重复爬取一些无意义的数据。
 
