@@ -29,3 +29,5 @@
 [原作者免责声明](https://github.com/xNathan/TeachEvaluation#免责声明)
 1. 本次修改已经邮件和原作者[@xNathan](https://github.com/xNathan)取得了联系，同样希望大家在使用的时候本着客观公正的态度去给每个老师进行评价。
 2. 系统给分是随机，所以希望大家认真对待给每个老师的评分。
+
+## 江西财经大学学生课程容量信息爬虫
