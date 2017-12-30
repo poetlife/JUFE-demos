@@ -188,8 +188,8 @@ def main():
     parser = optparse.OptionParser('Usage %prog ' + '-u <username> -p <password>')
     parser.add_option('-u', '--username', dest='username', type='string', help='enter your username/student number...')
     parser.add_option('-p', '--password', dest='password', type='string', help='enter your password, enter to compete...')
-    parser.add_option('-p1', '--path1', dest='path1', type='string', help='enter your original info path...')
-    parser.add_option('-p2', '--path2', dest='path2', type='string', help='enter your target path...')
+    parser.add_option('-o', '--path1', dest='path1', type='string', help='enter your original info path...')
+    parser.add_option('-t', '--path2', dest='path2', type='string', help='enter your target path...')
 
     opts, args = parser.parse_args()
     print('your information entered as follows:\n  --username: %s\n  --password: %s\n  --path1: %s\n  --path2: %s' %
@@ -198,7 +198,7 @@ def main():
     if prompt == 'y':
         print('go on to execute the program, maybe need a long time to compete...')
         # check the valid of the path
-        if os.path.exists(opts.path1) and os.path.exists(opts.path2):
+        if os.path.exists(opts.path1) or os.path.exists(opts.path2):
             c = CourseInfo(opts.username, opts.password)  # instance
             c.query_course_with_code_list(read_text(opts.path1), opts.path2)
         else:
