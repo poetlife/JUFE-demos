@@ -45,7 +45,7 @@
 1. 需要的package：`pandas/rsa/beautifulsoup`
 2. 依然采用了命令行输入的方式`Python /自动获取课程容量信息/CourseInfo.py -u <username> -p <password> -p1 <path1> -p2 <path2>`
 3. `path1`是指存放课程代码的列表的txt文件，`path2`是指生成的xlsx文件的导出位置。
-4. Example: `Python /自动获取课程容量信息/CourseInfo.py -u 220150**** -p ***** -p1 E:/1.txt -p2 E:/result.xlsx`
+4. Example: `Python /自动获取课程容量信息/CourseInfo.py -u 220150**** -p ***** -o E:/1.txt -t E:/result.xlsx`
 
 ### 存放课程代码txt文件实例
 1. Example中的`E:/1.txt`文件格式如下图所示。
