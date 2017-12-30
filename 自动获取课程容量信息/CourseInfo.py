@@ -10,7 +10,7 @@ import os
 import pandas as pd  # use this as store way
 
 import optparse  # command line tools
-from random import randint  # random tools
+# from random import randint  # random tools useless module for this part
 
 
 # this code attemps to get the new info with course
@@ -198,7 +198,7 @@ def main():
     if prompt == 'y':
         print('go on to execute the program, maybe need a long time to compete...')
         # check the valid of the path
-        if os.path.exists(opts.path1) or os.path.exists(opts.path2):
+        if os.path.exists(opts.path1) or os.path.exists(opts.path2): # there are some errors, not fixed 
             c = CourseInfo(opts.username, opts.password)  # instance
             c.query_course_with_code_list(read_text(opts.path1), opts.path2)
         else:
