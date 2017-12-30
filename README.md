@@ -53,6 +53,8 @@
 每个代码之间用`\n`隔开。
 2. 导出文件样式
 ![result.xlsx](https://github.com/poetlife/JUFE-demos/blob/master/pics/5.png)
+3. 操作示例
+![instance_for_maniplation](https://github.com/poetlife/JUFE-demos/blob/master/pics/6.png)
 
 ### 免责声明
 1. 由于这个程序是用学生账号对学校服务器进行**爬虫操作**，因此如果过于爬取频率过大被学校查处，使用者自行解决。
