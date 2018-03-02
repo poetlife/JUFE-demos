@@ -131,5 +131,5 @@ class CookieJarApp: CookieJar{
 
 fun main(args: Array<String>){
     val a = Crawler.getInstance()
-    a.loginJufe("2201503184", "pjd19970404")
+    a.loginJufe("220150", "p")
 }
