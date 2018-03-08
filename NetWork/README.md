@@ -9,6 +9,8 @@ cable Internet access|电缆因特网接入|利用了有线电视公司现有的
 Hybrid Fiber Coax(HFc)|混合光纤同轴|光缆将电缆头端连接到地区枢纽，从这里使用传统的同轴电缆到达各家各户和公寓 DOCSI 2.0 define -> 43.8Mbps download, 30.7Mbps upload
 FTTH(fiber to the home)|光纤到户|None
 Ethernet|以太网|指的是由Xerox公司创建并由Xerox、Intel和DEC公司联合开发的基带局域网规范，是当今现有局域网采用的最通用的通信协议标准。
+Frequency-Division Multiplexing(FDM)|频分复用|在连接期间，链路为每条连接专用一个频段
+Time-Division Multiplexing(TDM)|时分复用|其时域被分割为帧
 1. 什么是因特网
 2. 网络边缘
 3. 网络核心
