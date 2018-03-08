@@ -11,6 +11,10 @@ FTTH(fiber to the home)|光纤到户|None
 Ethernet|以太网|指的是由Xerox公司创建并由Xerox、Intel和DEC公司联合开发的基带局域网规范，是当今现有局域网采用的最通用的通信协议标准。
 Frequency-Division Multiplexing(FDM)|频分复用|在连接期间，链路为每条连接专用一个频段
 Time-Division Multiplexing(TDM)|时分复用|其时域被分割为帧
+nodal processing delay|节点处理时延|检查分组首部和决定将该分组导向何处所需要的时间
+queuing delay|排队时延|在队列中，当分组在链路上等待传输时的时延
+transmission delay|传输时延|将所有分组的比特推向链路所需要的时间
+propagation delay|传播时延|从该链路的起点到路由器B传播所需要的时间
 1. 什么是因特网
 2. 网络边缘
 3. 网络核心
