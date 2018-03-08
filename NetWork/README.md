@@ -2,6 +2,11 @@
 terminology|术语|解释
 ------|-----|------
 communication link|通信链路|由不同的物理媒体组成
+ISP(Internet Service Provider)|因特网服务供应商|None
+edge router|边缘路由器|是端系统到任何其他远程端系统的路径上的第一台路由器
+DSL(Digital Subscriber Line)|数字用户线|利用了电话线，两种传输速率, 1-> 1.8Mbps upload, 12Mbps download, 2 -> 2.5Mbps upload, 24Mbps download
+cable Internet access|电缆因特网接入|利用了有线电视公司现有的有线电视基础设施
+Hybrid Fiber Coax(HFc)|混合光纤同轴|光缆将电缆头端连接到地区枢纽，从这里使用传统的同轴电缆到达各家各户和公寓 DOCSI 2.0 define -> 43.8Mbps download, 30.7Mbps upload
 1. 什么是因特网
 2. 网络边缘
 # 应用层
