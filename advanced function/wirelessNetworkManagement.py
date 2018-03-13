@@ -4,10 +4,10 @@ Created on Tue Mar 13 11:58:30 2018
 this file aims to modify the wireless network experience
 @author: Administrator
 """
-
+import os
+from PIL import Image  # process the image lib
 import requests
 import lxml.etree  # faster
-import webbrowser as browser  # invoking a web browser to get the image captcha
 
 url_0 = "http://172.31.5.249"  # base
 url_1 = "http://172.31.5.249/wlan_self/"  # 无线网登录平台
@@ -69,6 +69,7 @@ class CrawerWirelessNetWork():
     def login(self):
         # 登录无线网络管理中心
         text_login = self.s.get(url_3, headers=self.headers)
+        print(self.s.cookies)
         captcha = url_0 + self.parseHtml(text_login.text).xpath(configXpath.get("login_captcha"))[0].get("src")
         result_captcha = self.parseCaptcha(captcha)
         login_data["ykt_user_id"] = self.username
@@ -79,6 +80,7 @@ class CrawerWirelessNetWork():
             print("login successfully...")
         else:
             print("error...exit the program...")
+            print(self.s.cookies)
         
     def parseHtml(self, html):
         obj = lxml.etree.HTML(html)
@@ -87,7 +89,14 @@ class CrawerWirelessNetWork():
     def parseCaptcha(self, captcha):
         # 识别验证码，并返回相关数据
         # 这种操作是错误的，因为这种情况下，不同次数访问的验证码仍然是不一样的，因此，这里需要使用session去下载这个验证码
-        browser.open_new_tab(captcha)
+        # 换用了session()操作获取验证码依然是错误的操作模式 2018-3-13 18:56:55
+        im_captcha = self.s.get(captcha)
+        if os.path.exists("./temp.jpg"):
+            os.remove("./temp.jpg")
+        with open("./temp.jpg", "wb") as f:
+            f.write(im_captcha.content)
+        image = Image.open("./temp.jpg")
+        image.show()
         print("the browser is open... please enter the verification code ...")
         while True:
             result = input("result: ")
@@ -102,5 +111,5 @@ class CrawerWirelessNetWork():
                     print("Error Captcha... plesase reenter later...")
         return result
     
-a = CrawerWirelessNetWork("2201503184", "858892")
+a = CrawerWirelessNetWork("2201503184", "000000")
 b = a.login()
