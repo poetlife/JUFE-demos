@@ -65,10 +65,33 @@ additionly, the colon operator has high priority within an expression
 2. to
 3. by: steps, default=1
 4. length
-5. vector  
+5. along = vector is normally used as the only argument to create the sequence 1, 2, ... , length(vector) 
+
 using only __two__ arguments
 ```
 > seq(from=1, to=4)
 [1] 1 2 3 4
 ```
+using `along` param
+```
+> v <- c(1, 2, 3)
+> seq(along=v)
+[1] 1 2 3
+> v <- c(4, 5, 6)
+> seq(along=v)
+[1] 1 2 3
+```
 #### using `rep()` function to replicate an object in various complicated ways.
+```
+(v, times=2)
+[1] 4 5 6 4 5 6
+```
+### Logical vectors
+
+### Missing values
+
+### Character vectors
+
+### Index vectors; selecting and modifying subsets of a data set
+
+### Other types of objects
