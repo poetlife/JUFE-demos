@@ -20,3 +20,32 @@
 18. Appendix D: Function and variable index
 19. Appendix E: Concept index
 20. Appendix F: References
+
+## Simple manipulations: numbers and vectors
+### assign a vector
+`c()` function can assign abitrary number of vertor arguments and whose value is a vector got by concatenating its arguments end to end.
+using "<-" operator
+```
+> x <- c(1, 2, 3, 4, 5)
+> x
+[1] 1 2 3 4 5
+```
+using "->" operator
+```
+> c(1, 2, 3, 4, 5) -> x
+> x
+[1] 1 2 3 4 5
+>
+```
+using `assign()` function
+```
+> assign("y", c(1, 3, 5, 7, 9))
+> y
+[1] 1 3 5 7 9
+```
+### Vector arithmetic
+The elementary arithmetic operators are the usual +, -, *, / and ^ for raising to a power.
+In addition, all of the common arithmetic functions are available. `log`, `exp`, `sin`, `cos`, `tan`, `sqrt`, and so on, all have theiru usual meaning.  
+`range` is a function whose value is a vector of length two, namely c(min(x), max(x)).  
+length(x) is the number of elements in x, sum(x) gives the total of the elements of a vector respectively.  
+
