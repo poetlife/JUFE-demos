@@ -48,4 +48,27 @@ The elementary arithmetic operators are the usual +, -, *, / and ^ for raising t
 In addition, all of the common arithmetic functions are available. `log`, `exp`, `sin`, `cos`, `tan`, `sqrt`, and so on, all have theiru usual meaning.  
 `range` is a function whose value is a vector of length two, namely c(min(x), max(x)).  
 length(x) is the number of elements in x, sum(x) gives the total of the elements of a vector respectively.  
-
+### Generating regular sequences
+#### using colon to assign a regular sequence
+```
+> 1:20
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+```
+additionly, the colon operator has high priority within an expression
+```
+> 2*1:5
+[1]  2  4  6  8 10
+```
+#### using `seq()` function to get a sequence
+`seq()` has **five** arguments
+1. from
+2. to
+3. by: steps, default=1
+4. length
+5. vector  
+using only __two__ arguments
+```
+> seq(from=1, to=4)
+[1] 1 2 3 4
+```
+#### using `rep()` function to replicate an object in various complicated ways.
