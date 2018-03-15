@@ -87,7 +87,18 @@ using `along` param
 [1] 4 5 6 4 5 6
 ```
 ### Logical vectors
-
+`TRUE` means true;
+`FALSE` means false;
+`NA` means not available  
+operator|meanings
+----|----
+==| equality
+!=| inequality
+> | more than
+< | less than
+& | and
+\| | or
+!c1 | not c1
 ### Missing values
 
 ### Character vectors
