@@ -1,6 +1,6 @@
 # R Tutorial
 
-1. Introduction and preliminaries
+1. [Introduction and preliminaries](https://github.com/poetlife/JUFE-demos/blob/master/R/README.md#simple-manipulations-numbers-and-vectors)
 2. Simple manipulations; numbers and vectors
 3. Objects, their modes and attributes
 4. Ordered and unordered factors
