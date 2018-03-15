@@ -95,8 +95,8 @@ operator|meanings
 -----|-----
 ==| equality
 !=| inequality
-> | more than
-< | less than
+\> | more than
+\< | less than
 & | and
 \| | or
 !c1 | not c1
