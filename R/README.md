@@ -140,3 +140,9 @@ exclude
 3. **list**: a general form of vector in which the various elements need not be of the same type, and are often themselves vectors or lists.
 4. **data frame**: matrix-like structures, in which the columns can be of different types.
 5. **function**
+
+## Objects, their modes and attributes
+### Intrinsic attributes: mode and length
+### Changing the length of an object
+### Getting and setting attributes
+### The class of an object
