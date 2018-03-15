@@ -128,5 +128,15 @@ The `paste()` function takes an arbitrary number of arguments and concatenates t
 [1] "X 1" "Z 2" "X 3" "Z 4" "X 5"
 ```
 ### Index vectors; selecting and modifying subsets of a data set
-
+1. A Logical Vector
+2. A vector of positive integral quantities
+include
+3. A vector of negative integral quatities
+exclude
+4. A vector of character strings
 ### Other types of objects
+1. **array**: multi-dimensional generalizations of vectors
+2. **factors**: handle categorical data
+3. **list**: a general form of vector in which the various elements need not be of the same type, and are often themselves vectors or lists.
+4. **data frame**: matrix-like structures, in which the columns can be of different types.
+5. **function**
