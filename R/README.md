@@ -102,9 +102,31 @@ operator|meanings
 !c1 | not c1
 
 ### Missing values
-
+In some cases, missing values may be reserved using "NA". In general any operation on an NA becomes an NA.
+Another kind of "missing" values which are produced by numerical coputation, the so-called __Not a Number, NaN__
+```
+> 0/0
+[1] NaN
+```
+judging a NaN or NA
+```
+> is.na(NA)
+[1] TRUE
+> is.na(0/0)
+[1] TRUE
+> is.nan(NA)
+[1] FALSE
+> is.nan(0/0)
+[1] TRUE
+```
 ### Character vectors
-
+The `paste()` function takes an arbitrary number of arguments and concatenates them one by one into character strings.
+```
+> paste(c("X", "Z"), 1:5, sep="")
+[1] "X1" "Z2" "X3" "Z4" "X5"
+> paste(c("X", "Z"), 1:5)
+[1] "X 1" "Z 2" "X 3" "Z 4" "X 5"
+```
 ### Index vectors; selecting and modifying subsets of a data set
 
 ### Other types of objects
