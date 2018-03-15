@@ -90,8 +90,9 @@ using `along` param
 `TRUE` means true;
 `FALSE` means false;
 `NA` means not available  
+
 operator|meanings
-----|----
+-----|-----
 ==| equality
 !=| inequality
 > | more than
@@ -99,6 +100,7 @@ operator|meanings
 & | and
 \| | or
 !c1 | not c1
+
 ### Missing values
 
 ### Character vectors
