@@ -1,3 +1,6 @@
+# 进行了Python3支持，其中原脚本地址为https://www.jisilu.cn/question/90961
+# 为了研究方便，故迁移至Python3
+# 目前发现此API具有某些问题： 获取数据长度有限制，大概只能获取大概600条数据左右
 
 import requests
 import json
