@@ -113,9 +113,9 @@ class MarkdownTable(Table):
             
 #        print("%s---%s"%(self.width,self._calculate_width(data_length)))
         temp += "|" + \
-        "".join(" " for j in range(indent)) + \
+        "".join("&nbsp;" for j in range(indent)) + \
         data + \
-        "".join(" " for i in range(self.width - self._calculate_width(data_length) - indent)) + \
+        "".join("&nbsp;" for i in range(self.width - self._calculate_width(data_length) - indent)) + \
         "|  \n"
         # 这里的长度计算似乎出了点问题，比原来计划的长1
         temp += self._generate_horizental_line() + "  \n"
@@ -131,7 +131,7 @@ class MarkdownTable(Table):
         pattern = re.compile("#+\s")
         x = re.sub(pattern, "", x)
         processed = "[" + x + "]" + \
-        "(#" + x + ")"
+        "(#" + x.replace(" ", "-") + ")"
         count = self._countSharp(x)
         return [x, processed, count]
     
