@@ -38,3 +38,4 @@
 
 [a](#a)
 [The class of an object](#The class of an object)
+[the class of an object](#The class of an object)
