@@ -8,7 +8,7 @@
 # +-------------------------+
 # | [headings2](#headings2) |
 # +-------------------------+
-#
+# we need to reconsider the effect of the html, we must get safe url to parse.
 
 # import textwrap
 import re
