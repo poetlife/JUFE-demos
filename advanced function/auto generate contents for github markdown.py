@@ -2,18 +2,22 @@
 # @modified: 2018-3-20 22:40:05
 # @author: Jakie Peng
 # @description: a script to auto generate a text content for github markdown
+# @problem: some situation can't revert the string to url... such as "R: introduce"
+# @problem: need fix later
+# @problem: need to recalculate the width of the chars in html not the plain text
 #          content
 # +-------------------------+
 # | [headings](#headings)   |
 # +-------------------------+
 # | [headings2](#headings2) |
 # +-------------------------+
-# we need to reconsider the effect of the html, we must get safe url to parse.
+#
 
 # import textwrap
 import re
 import unicodedata  # to calculate the width of the chars
 from typing import List
+import urllib
 
 # patterns to parse the titles writes in MD
 def parse_markdown(markdown_string) -> List[str]:
@@ -302,3 +306,5 @@ a = MarkdownTable(80)
 c = a.generate(parse_markdown(b))
 d = c.replace("+", "\+")
 print(d)
+
+urllib.parse.quote
