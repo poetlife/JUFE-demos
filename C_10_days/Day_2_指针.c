@@ -35,7 +35,7 @@ void func3(){
 // C指针的算术运算
 void plusplus(){
     // 指针做 ++ 运算
-    const MAX = 3;
+    const int MAX = 3;
     int var[] = {12, 13, 14};
     int i, *ptr;
     
@@ -52,7 +52,7 @@ void plusplus(){
 
 void subtractsubtract(){
     // 指针做 -- 运算
-    const MAX = 3;
+    const int MAX = 3;
     int var[] = {12, 13, 14};
     int i, *ptr;
     
@@ -67,8 +67,23 @@ void subtractsubtract(){
     }
 }
 
+
+// 指针数组
+void pointer_array(){
+    const int MAX = 3;
+    int var[] = {12, 13, 14};
+    int i, *ptr[MAX];
+    
+    for (i=0; i<MAX; i++){
+        ptr[i] = &var[i];  // 赋值为整数的地址
+    }
+    for (i=0; i<MAX; i++){
+        printf("存储值为var[%d]=%d\n", i, *ptr[i]);
+    }
+}
+
 int main(){
     
-    subtractsubtract();
+    pointer_array();
     return 0;
 }
