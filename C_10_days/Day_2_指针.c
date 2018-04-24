@@ -126,6 +126,45 @@ void get_average(int *arr, int size);
 // 从函数返回指针、
 int * myfunction();
 
+/*
+函数指针与回调函数
+*/
+int max(int x, int y){
+    return x>y ? x : y;
+}
+
+void function_pointer(){
+    /* p是函数指针 */
+    int (*p)(int, int) = &max;  // &可以省略
+    int a, b, c, d;
+    
+    printf("请输入3个数字：\n");
+    scanf("%d %d %d", &a, &b, &c);
+    d = p(p(a, b), c);
+    
+    printf("最大的数字为：%d", d);
+}
+
+// callback function 回调函数，即函数作为参数传递到另一个函数中
+void populate_array(int *array, size_t arraySize, int (*getNextValue)(void)){
+	for (size_t i=0; i<arraySize; i++){
+		array[i] = getNextValue();
+	}
+}
+
+// 返回随机值
+int getNextRandomValue(void){
+	return rand();
+}
+
+void callback(){
+	int myArray[10];
+	populate_array(myArray, 10, getNextRandomValue);
+	for (int i=0; i<10; i++){
+		printf("%d ", myArray[i]);
+	}
+}
+
 int main(){
     
     pointer_array();
