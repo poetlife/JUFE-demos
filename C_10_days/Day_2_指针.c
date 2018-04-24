@@ -1,4 +1,6 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 void func1(){
     // how to use pointer
@@ -81,9 +83,6 @@ void pointer_array(){
         printf("存储值为var[%d]=%d\n", i, *ptr[i]);
     }
 }
-
-#include <stdio.h>
-#include <time.h>
 
 void pointer_to_pointer(){
     // 这里使用指针指向指针
