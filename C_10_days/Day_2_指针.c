@@ -82,6 +82,50 @@ void pointer_array(){
     }
 }
 
+#include <stdio.h>
+#include <time.h>
+
+void pointer_to_pointer(){
+    // 这里使用指针指向指针
+    int var;
+    int *pt;
+    int **ptr;  // 指向指针的指针
+    
+    var = 300;
+    
+    // 给指针赋值
+    pt = &var;
+    ptr = &pt;
+    
+    printf("the value of var is %d\n", var);
+    printf("the value of pt is %d\n", *pt);
+    printf("the value of ptr %d\n", **ptr);
+
+}
+
+void get_seconds(unsigned long *par);
+
+void pointer_in_function(){
+    unsigned long sec;
+    
+    get_seconds(&sec);
+    
+    // 输出实际值
+    printf("the value of second is: %ld", sec);
+}
+
+void get_seconds(unsigned long *par){
+    /*获取当前的秒数*/
+    *par = time(NULL);
+    return;
+}
+
+// 能接受指针作为参数的函数，也能接受数组作为参数
+void get_average(int *arr, int size);
+
+// 从函数返回指针、
+int * myfunction();
+
 int main(){
     
     pointer_array();
